@@ -1,0 +1,111 @@
+  
+        :root {
+            --accent: #0b6b6b;
+            --muted: #6b7280;
+            --bg: #f6f9fc
+        }
+
+ 
+
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg), #ffffff);
+            height: calc(100vh - 130px);
+            display: flex;
+            margin: 0;
+            color: #1f2937;
+            line-height: 1.6; 
+        }
+
+        .about-container {
+         
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 28px;
+            background: #ffffff;
+            margin-top: 100px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06)
+        }
+
+        .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #f2f2f2;
+            flex-shrink: 0;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06)
+        }
+
+        .meta h1 {
+            margin: 0 0 8px 0;
+            font-size: 1.6rem;
+            color: var(--accent)
+        }
+
+        .meta p {
+            margin: 6px 0;
+            color: var(--muted)
+        }
+
+        .section {
+            margin-top: 22px
+        }
+
+        .section h2 {
+            margin: 0 0 10px 0;
+            color: var(--accent);
+            font-size: 1.15rem
+        }
+
+        .blessing {
+            margin-top: 14px;
+            padding: 14px;
+            background: #f0f9f4;
+            border-left: 4px solid #2e7d32;
+            border-radius: 6px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 8px 0
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline
+        }
+
+        main a:focus {
+            outline: 3px solid rgba(11, 107, 107, 0.12);
+            outline-offset: 3px
+        }
+
+        @media (max-width:720px) {
+            .about-container {
+                margin-top: 100px;
+                padding-top: 30px
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .meta {
+                width: 100%
+            }
+        }
+    

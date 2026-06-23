@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/chef-fevicon2.png" type="favicon">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div class="main_container">
+
+
+        <!-- header section -->
+        <header  class="header_section header_flex">
+          <a href="about.html" title="About Us">
+
+              <img src="images/chef1.png" alt="chef-image" >
+          </a>
+            <div class="header_section">
+                <h1>Recipe Search</h1>
+                <div class="search_section">
+
+                    <input type="text" id="searchInput" placeholder="Search for recipe...">
+                    <button id="searchButton">Search</button>
+                </div>
+                <div class="filter_section">
+                    <select id="dietFilter">
+                        <option value="all">All Diets</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="non-vegetarian">Non-Vegetarian</option>
+                    </select>
+                    <select id="mealFilter">
+                        <option value="all">All Meals</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </div>
+            </div>
+            
+            <a href="about.html" title="About Us">
+                <img src="images/chef1.png" alt="chef-image"  >
+            </a>
+        </header>
+        <!-- main section -->
+        <main>
+            <div id="recipes_container" class="recipes_container">
+
+            </div>
+
+        </main>
+
+        <!-- footer section  start -->
+        <footer>
+            <p>&copy 2026 All rights reserved | Developed by Mohammad Suhail</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
